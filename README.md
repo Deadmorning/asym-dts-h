@@ -25,7 +25,7 @@ else:                              DTS 双向   ← 震荡市套利
 
 相对原 BigQuant v2 修复了 6 处结构问题（D_REV 量级、前一日取法、WTS 短周过滤、WTS 缓存、last_wts 周更、UP+UP 保护）。
 
-详见 [REPORT.md](REPORT.md) 和 [COMPARISON.md](COMPARISON.md)。
+详见 [REPORT.md](REPORT.md)（设计+回测）、[COMPARISON.md](COMPARISON.md)（四方对比）和 [ABLATIONS.md](ABLATIONS.md)（**DTS/WTS 消融实验 + 自吸收循环原理**）。
 
 ---
 
@@ -99,6 +99,7 @@ asym-dts-h/
 ├── asym_dts_h_local_backtest.py    # 本地 pandas 向量化回测（用于参数校准）
 ├── REPORT.md                       # 完整策略报告（设计 + 回测 + 风险）
 ├── COMPARISON.md                   # 四方策略结构对比
+├── ABLATIONS.md                    # DTS/WTS 消融实验 + 自吸收循环原理（2026-04-21）
 └── README.md                       # 本文件
 ```
 
